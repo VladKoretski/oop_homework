@@ -1,5 +1,7 @@
 # OOP Homework: Наследование, инкапсуляция и полиморфизм
 
+[![Python CI](https://github.com/VladKoretski/oop_homework/actions/workflows/ci.yml/badge.svg)](https://github.com/VladKoretski/oop_homework/actions/workflows/ci.yml)
+
 Данный проект реализует систему учета оценок студентов и лекторов в рамках учебного процесса на языке Python.  
 Проект демонстрирует принципы объектно-ориентированного программирования: наследование, инкапсуляцию и полиморфизм.
 
