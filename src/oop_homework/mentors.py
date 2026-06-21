@@ -166,7 +166,8 @@ class Reviewer(Mentor):
             Оценки сохраняются в словаре student.grades, где ключ — курс, значение — список оценок.
             В отличие от rate_lecture, здесь нет проверки на диапазон оценки.
         """
-         
+        from src.oop_homework.students import Student
+
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
             if course in student.grades:
                 student.grades[course] += [grade]
