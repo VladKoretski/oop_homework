@@ -61,8 +61,9 @@ class Student:
             Оценки сохраняются в словаре lecturer.grades, где ключ — курс, значение — список оценок.
         """
 
+        from src.oop_homework.mentors import Lecturer   # <--- ДОБАВЬТЕ ЭТУ СТРОКУ
         if isinstance(lecturer, Lecturer) and course in lecturer.courses_attached and course in self.courses_in_progress:
-            if grade < 1 and grade > 10:
+            if grade < 1 or grade > 10:
                 return 'Ошибка: оценка не соответствует 10-балльной системе'
             else:
                 if course in lecturer.grades:
